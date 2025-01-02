@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="bg_day_color">#FAF2FF</color>
+    <color name="bg_night_color">#3A1C1C</color>
+
+    <color name="primary_color">#B865FA</color>
+    <color name="secondary_color">#F8B019</color>
+
+
+    <color name="item_night_color">#4B3B3B</color>
+    <color name="item_day_color">#FAF2EE</color>
+
+
+</resources>
