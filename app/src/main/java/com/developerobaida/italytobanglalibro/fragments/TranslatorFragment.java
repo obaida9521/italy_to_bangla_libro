@@ -46,8 +46,6 @@ public class TranslatorFragment extends Fragment {
     Locale locale = Locale.ITALIAN;
     String locale2;
 
-
-
     private void downloadAllLanguageModels() {
         String[] languages = {TranslateLanguage.ENGLISH, TranslateLanguage.BENGALI, TranslateLanguage.ITALIAN};
 
@@ -61,9 +59,7 @@ public class TranslatorFragment extends Fragment {
 
                     Translator translator = Translation.getClient(options);
 
-                    DownloadConditions conditions = new DownloadConditions.Builder()
-                            .requireWifi() // Ensure download happens on Wi-Fi
-                            .build();
+                    DownloadConditions conditions = new DownloadConditions.Builder().build();
 
                     translator.downloadModelIfNeeded(conditions)
                             .addOnSuccessListener(unused -> Log.d("TranslatorFragment",
@@ -171,7 +167,7 @@ public class TranslatorFragment extends Fragment {
             case "বাংলা":
                 return new Locale("bn-IN");
             case "Italian":
-                return new Locale("it-IT");//Locale.ITALIAN;
+                return new Locale("it","IT");//Locale.ITALIAN;
             default:
                 return new Locale("it-IT");
         }
@@ -210,7 +206,7 @@ public class TranslatorFragment extends Fragment {
         translator = Translation.getClient(options);
 
 
-        DownloadConditions conditions = new DownloadConditions.Builder().requireWifi().build();
+        DownloadConditions conditions = new DownloadConditions.Builder().build();
 
 
         translator.downloadModelIfNeeded(conditions)

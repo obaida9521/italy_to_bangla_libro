@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Italy To Bangla Libro</string>
+    <string name="app_name">Italian To Bangla Libro</string>
 
     <string-array name="languages">
         <item>English</item>

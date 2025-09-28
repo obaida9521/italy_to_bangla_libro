@@ -68,7 +68,7 @@ public class MainActivity2 extends GetUtils{
 
         textToSpeech = new TextToSpeech(this, status -> {
             if (status == TextToSpeech.SUCCESS) {
-                int result = textToSpeech.setLanguage(new Locale("it-IT"));
+                int result = textToSpeech.setLanguage(new Locale("it","IT"));
 
                 if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                     Toast.makeText(MainActivity2.this, "Italian language need activate from settings", Toast.LENGTH_SHORT).show();
